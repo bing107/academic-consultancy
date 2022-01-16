@@ -70,7 +70,9 @@ const IndexPage = () => {
             <span>
               <a
                 style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+                href={`${link.url}`}
+                target="_blank"
+                rel="noreferrer"
               >
                 {link.title}
               </a>
