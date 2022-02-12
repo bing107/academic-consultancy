@@ -39,7 +39,7 @@ const IndexPage = () => {
     graphql`
       query {
         allContentfulListOfLinks(
-          filter: { title: { eq: "Scholarships 2022" } }
+          filter: { title: { eq: "Scholarships in Europe" } }
         ) {
           edges {
             node {
@@ -55,6 +55,7 @@ const IndexPage = () => {
       }
     `
   );
+  console.log(data);
 
   return (
     <main style={pageStyles}>
